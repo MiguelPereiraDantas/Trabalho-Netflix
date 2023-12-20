@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+	<link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+	<link rel="stylesheet" href="css/reset.css">
+	<link rel="stylesheet" href="css/cards.css">
+	<link rel="stylesheet" href="css/form.css">
+	<link rel="stylesheet" href="css/mediaQ.css">
+	<link rel="stylesheet" href="css/erro.css">
+	<title>Pagamento | Cartão de Crédito</title>
+</head>
+<body>
+	<section class="imagem">
+		<div class="imagem__cartao">
+			<div class="cartao-tras">
+				<p id="cvc-card">cvc</p>
+			</div>
+			<div class="cartao-frente">
+				<img src="images/card-logo p.svg" id="logo-card">
+				<p id="num-card">0000 0000 0000 0000</p>
+				<p id="name-card">Nome Completo</p>
+				<div class="dataCard">
+					<p id="mes-card">00/</p>
+					<p id="ano-card">00</p>
+				</div>
+			</div>
+		</div>
+	</section>
+	<section class="container-form"> 
+		<form class="container-form__form" id="form">
+			<div class="form__div" id="div__name">
+				<label for="nome" class="label">Nome no Cartão</label>
+				<input type="text" id="name" class="info" placeholder="Nome completo" maxlength="20">
+				<small></small>
+			</div>
+			<div class="form__div" id="div__num">
+				<label for="numero" class="label">Número do Cartão</label>
+				<input type="tel" id="num" class="info" placeholder="0000 0000 0000 0000" required maxlength="20">
+				<small></small>
+			</div>
+			<div class="form__div2">
+				<div class="form__data">
+					<div class="form__data-data" id="div__date">
+						<label class="label">Validade(Mês/Ano)</label>
+						<input type="number" id="mes" class="info data" placeholder="MM" required min="01" max="12" oninput="javascript: if (this.value.length > this.maxLength) this.value = this.value.slice(0, this.maxLength);" maxlength="2" >
+						<input type="number" id="ano" class="info data" placeholder="AA" required min="22" max="40" oninput="javascript: if (this.value.length > this.maxLength) this.value = this.value.slice(0, this.maxLength);" maxlength="2">
+						<small></small>
+					</div>
+				</div>
+				<div class="form__div2-cvc" id="div__cvc">
+					<label for="cvc" class="label">CVC</label>
+					<input type="number" id="cvc" class="info" placeholder="000" required oninput="javascript: if (this.value.length > this.maxLength) this.value = this.value.slice(0, this.maxLength);" maxlength="3">
+					<small></small>
+				</div>
+			</div>
+			
+			<input type="submit" value="Confirmar" class="button" id="button">
+		</form>
+	</section>
+
+	<script src="js/index.js"></script>
+	<script src="js/infoCard.js"></script>
+	<script src="js/validForm.js"></script>
+</body>
+</html>

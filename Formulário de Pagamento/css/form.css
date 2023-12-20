@@ -1,0 +1,84 @@
+.container-form {
+    font-family: 'Space Grotesk';
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin: 13.75rem 0 0 0;
+    width: 100%;
+}
+
+.container-form__form {
+    display: flex;
+    flex-direction: column;
+    align-self: center;
+    width: 21.938rem;
+    height: 20.625rem;
+    margin-top: 5.5rem;
+}
+
+.form__div {
+    display: flex;
+    flex-direction: column;
+    margin: .5rem 0;
+}
+
+.form__div2 {
+    display: flex;
+    justify-content: space-between;
+    margin: .5rem 0;
+}
+
+.info {
+    height: 2rem;
+    border: 1px solid #000;
+    border-radius: 10px;
+    padding-left: .5rem;
+}
+
+.label {
+    margin: 0 0 .3rem .3rem;
+}
+
+.form__data {
+    display: flex;
+    align-items: left;
+    flex-direction: column;
+    width: 11rem;
+    height: 3.996rem;
+}
+
+.form__data-data {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    width: 11.5rem;
+    margin-right: .8rem;
+}
+
+.form__div2-cvc {
+    display: flex;
+    flex-direction: column;
+    align-self: center;
+    margin-bottom: .5rem;
+}
+
+.data {
+    width: 4.594rem;
+}
+
+#cvc {
+    width: 9rem;
+}
+
+.button {
+    font-family: 'Space Grotesk';
+    height: 2rem;
+    margin-top: 1.5rem;
+    background-color: #000;
+    color: #fff;
+    border: 1px solid #000;
+    border-radius: 5px;
+}
