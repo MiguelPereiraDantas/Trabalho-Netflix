@@ -1,0 +1,81 @@
+@media screen and (min-width: 1124px) {
+    body {
+        display: flex;
+        justify-content: space-between;
+    }
+    
+    .imagem {
+        background-image: url(../images/bg-main-desktop.png);
+        width: 30.188rem;
+        height: 100vh;
+        transform: rotate(90);
+    }
+
+    .cartao-frente {
+        background-image: url(../images/bg-card-front.png);
+        width: 24rem;
+        height: 14rem;
+        margin: -30rem 0 0 20rem;
+    }
+
+    .cartao-tras {
+        background-image: url(../images/bg-card-back.png);
+        width: 24rem;
+        height: 14rem;
+        margin: 1rem 0 0 23rem;
+    }
+
+    #logo-card {
+        margin: 20px 0 0 20px;
+        width: 58px;
+        height: 36px;
+    }
+
+    #num-card {
+        margin: 62px 49px 0 49px;
+        font-size: 24px;
+    }
+
+    #name-card {
+        margin: 28px 0 0 49px;
+    }
+
+    .dataCard {
+        margin: -17px 0 0 260px;
+    }
+
+    #cvc-card {
+        padding: 112px 0 0 330px;
+    }
+
+    /* Formulário */
+    .container-form {
+        position: initial;
+        width: 70%;   
+        height: 100vh;
+        margin: 0 0 0 30.188rem;
+    }
+
+    .container-form__form {
+        margin: 9rem 0 0 10rem;
+        width: 30rem;
+        height: 32rem;
+    }
+
+    .info {
+        font-size: 18px;
+        height: 2.5rem;
+    }
+
+    #cvc {
+        width: 15rem;
+    }
+
+    .button {
+        height: 3rem;
+    }
+
+    .button:hover {
+        cursor: pointer;
+    }
+}
